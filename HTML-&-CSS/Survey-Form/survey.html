@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- req 1 -->
+    <h1 id="title">LKTN Content Creator Application Form</h1>
+    <!-- req 2 -->
+    <p id="description">This form serves as the official application form of Lakatan Network as we accept more content
+        creators in the future</p>
+
+    <!-- req 3 -->
+    <form action="" id="survey-form">
+        <fieldset>
+            <!-- req 4, 10, 11 -->
+            <label id="name-label">Your name: <input type="text" name="" id="name"
+                    placeholder="Surname, First Name Middle Initial" required></label>
+            <!-- req 5 and 6, 10, 11 -->
+            <label id="email-label">Your email: <input type="email" name="" id="email" placeholder="example@gmail.com"
+                    required></label>
+            <!-- req 7, 8, 9, 10, 11 -->
+            <label id="number-label">Your age: <input type="number" name="" id="number" min="10" max="100"
+                    placeholder="18" required></label>
+        </fieldset>
+        <fieldset>
+            <!-- req 12 -->
+            <select name="" id="dropdown">
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+            <!-- req 13 -->
+            <label for=""><input type="radio" name="jobChoice" id="" value="Front"> Front-end (Streamer, Content Creator, etc.)</label>
+            <label for=""><input type="radio" name="jobChoice" id="" value="Back"> Back-end (Creatives, HR, etc.)</label>
+
+            <!-- req 14 -->
+            <label for=""><input type="checkbox" name="gameGenre" id="" value="RPG"> RPG</label>
+            <label for=""><input type="checkbox" name="gameGenre" id="" value="MMO"> MMO</label>
+            <label for=""><input type="checkbox" name="gameGenre" id="" value="FPS"> FPS</label>
+            <label for=""><input type="checkbox" name="gameGenre" id="" value="BR"> Battle Royale</label>
+            <label for=""><input type="checkbox" name="gameGenre" id="" value="SP"> SP-Story</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="">How did your Streaming journey start?
+                <!-- req 15 -->
+                <textarea name="" id="" cols="30" rows="10" placeholder="My journey started when..."></textarea>
+            </label>
+        </fieldset>
+
+        <!-- req 16 -->
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+
+
+</body>
+
+</html>
