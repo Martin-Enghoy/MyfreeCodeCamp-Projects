@@ -1,0 +1,17 @@
+/* req 13 */
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 720px) {
+    .form {
+        width: 100%;
+    }   
+}
+
+body { 
+    display: flex;
+}

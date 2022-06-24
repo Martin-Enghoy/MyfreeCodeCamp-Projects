@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <main>
@@ -21,12 +22,19 @@
             </nav>
         </header>
 
+        <section id="product"></section>
+        <section id="payment"></section>
+        <section id="about-us"></section>
+
         <!-- req 6 -->
         <video src="https://www.youtube.com/watch?v=lZaLZO61-gY&t=1620s" id="video" controls></video>
 
-        <!-- req 7 -->
-        <form action="" id="form">
-            
+        <!-- req 7, 12 -->
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <!-- req 8, 9, 10 -->
+            <label for="email">Your Email: <input type="email" id="email" name="email" placeholder="example@gmail.com"></label>
+            <!-- req 11 -->
+            <input type="submit" id="submit" value="Submit">
         </form>
     </main>
 </body>
