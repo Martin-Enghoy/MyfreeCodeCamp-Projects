@@ -1,0 +1,16 @@
+/* req 9 */
+@media (max-width: 720px) {
+    .project-tile {
+        width: 100%;
+    }
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    display: absolute;
+    top: 0;
+    left: 0;
+}

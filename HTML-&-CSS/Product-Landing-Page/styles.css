@@ -12,6 +12,18 @@
     }   
 }
 
+@media (max-width: 600px) {
+    #projects {
+        width: 100%;
+    }   
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: gray;
+    }
+}
+
 body { 
     display: flex;
 }
