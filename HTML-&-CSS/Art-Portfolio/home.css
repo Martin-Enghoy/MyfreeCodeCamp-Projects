@@ -1,3 +1,15 @@
+/* @media (prefers-reduced-motion: no-preference) {
+    html:focus-within {
+        scroll-behavior: smooth;
+        scroll-padding-top: 4vmax;
+    }
+} */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4vmax;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -19,8 +31,12 @@ body {
 }
 
 .bold {
-    font-weight: 600 !important; 
+    font-weight: 600 !important;
 }
+
+/* :where(h2):focus {
+    outline: none;
+} */
 
 /* .fa {
     font-size: 20px;
