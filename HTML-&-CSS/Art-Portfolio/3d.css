@@ -28,11 +28,14 @@ body {
   background-repeat: repeat;
   background-size: cover;
   justify-content: center;
-  /* row-gap: 5000px; */
 }
 
 .bold {
   font-weight: 600 !important;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 #top-button {
@@ -40,8 +43,8 @@ body {
   position: sticky;
   /* bottom: -5rem;
   right: -5rem; */
-  /* bottom: 40px;
-  right: 50px; */
+  bottom: 40px;
+  right: 50px;
   width: 2em;
   height: 2em;
   padding: 0.5em 0.6em;
@@ -54,23 +57,6 @@ body {
   text-align: center;
   margin-bottom: 10vh;
   /* line-height: 50px; */
-}
-
-#top-button-section {
-  position: sticky;
-  height: 0;
-  top: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 100%;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  /* padding-bottom: 1000px;
-  box-sizing: border-box; */
-  padding-right: 50px;
-
-  /* padding: auto; */
 }
 
 /* :where(h2):focus {
