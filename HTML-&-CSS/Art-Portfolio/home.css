@@ -180,12 +180,3 @@
   color: white;
   justify-content: flex-end;
 }
-
-/*   FOOTER   */
-
-#footer {
-  display: flex;
-  width: 100vw;
-  height: 160px;
-  background-color: #8e4b32;
-}

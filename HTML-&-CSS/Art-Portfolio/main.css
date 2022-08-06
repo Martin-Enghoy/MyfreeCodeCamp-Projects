@@ -5,6 +5,12 @@
     }
 } */
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4vmax;
@@ -40,4 +46,38 @@ body {
 
 .no-decoration {
   text-decoration: none;
+}
+
+.header-font {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.icon-wrapper {
+  margin-right: 10px;
+}
+
+.content-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.5%;
+  border: 1px solid red;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+/*   FOOTER   */
+
+#footer {
+  display: flex;
+  width: 100vw;
+  height: 160px;
+  background-color: #8e4b32;
 }
