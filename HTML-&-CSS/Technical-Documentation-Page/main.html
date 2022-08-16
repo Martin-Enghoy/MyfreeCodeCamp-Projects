@@ -1,83 +1,175 @@
+<!-- 
+    TODO:
+    *  1. You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+
+    *  2. Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+
+    *  3. The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+
+    *  4. Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+
+    *  5. The .main-section elements should contain at least ten p elements total (not each)
+
+    *  6. The .main-section elements should contain at least five code elements total (not each)
+
+    *  7. The .main-section elements should contain at least five li items total (not each)
+
+    *  8. You can see a nav element with a corresponding id="navbar"
+
+    *  9 The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+
+    *  10. Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+
+    *  11. The header element in the #navbar must come before any link (a) elements in the navbar
+
+    *  12. Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+
+    *  13. When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+
+    *  14. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+
+    *  15. Your technical documentation should use at least one media query
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<body>
-    <!-- req 8 -->
-    <nav id="navbar">
-        <!-- req 9, 11 -->
-        <header>My Technical Portfolio</header>
-        <!-- req 10, 12, 13 -->
-        <a class="nav-link" href="#WebDev_HTML_CSS">WebDev HTML CSS</a>
-        <a class="nav-link" href="#JavaScript_Projects">JavaScript Projects</a>
-        <a class="nav-link" href="#Python_Projects">Python Projects</a>   
-        <a class="nav-link" href="#C/C++_Projects">C/C++ Projects</a>
-        <a class="nav-link" href="#MySQL_Projects">MySQL Projects</a>
-        <a class="nav-link" href="#Technical_Recommendations">Technical Recommendations</a>
+  <body>
+    <nav id="top-bar">
+      <!-- Burger -->
+      <a href="" id="menu-pop" class="">
+        <svg
+          id="menu-button"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+            fill="currentColor"
+          />
+          <path
+            d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+            fill="currentColor"
+          />
+          <path
+            d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+
+      <div id="logo-wrapper">
+        <h6 id="logo-name">Martin's LeetCode & Codewars Repo</h6>
+        <svg
+          id="logo-laptop"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3 6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V14C21 15.1046 20.1046 16 19 16H5C3.89543 16 3 15.1046 3 14V6ZM5 6H19V14H5V6Z"
+            fill="currentColor"
+          />
+          <path
+            d="M2 18C1.44772 18 1 18.4477 1 19C1 19.5523 1.44772 20 2 20H22C22.5523 20 23 19.5523 23 19C23 18.4477 22.5523 18 22 18H2Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </nav>
     <!-- req 1 -->
     <main id="main-doc">
-        <!-- req 2, 4 -->
-        <section class="main-section" id="WebDev_HTML_CSS">
-            <!-- req 3 -->
-            <header>WebDev HTML CSS</header>
-            <!-- req 5 -->
-            <p>Paragraph 1</p>
-            <p>Paragraph 2</p>
-            <!-- req 6 -->
-            <code></code>
-            <code></code>
-            <p>Paragraph 3</p>
-        </section>
-        <section class="main-section" id="JavaScript_Projects">
-            <header>JavaScript Projects</header>
-            <p>Paragraph 1</p>
-            <code></code>
-            <p>Paragraph 2</p>
-        </section>
-        <section class="main-section" id="Python_Projects">
-            <header>Python Projects</header>
-            <p>Paragraph 1</p>
-            <code></code>
-            <p>Paragraph 2</p>
-            <code></code>
-            <p>Paragraph 3</p>
-        </section>
-        <section class="main-section" id="C/C++_Projects">
-            <header>C/C++ Projects</header>
-            <p>Paragraph 1</p>
-            <code></code>
-            <p>Paragraph 2</p>
-        </section>
-        <section class="main-section" id="MySQL_Projects">
-            <header>MySQL Projects</header>
-            <p>Paragraph 1</p>
-            <code></code>
-            <p>Paragraph 2</p>            
-        </section>
-        <section class="main-section" id="Technical_Recommendations">
-            <header>Technical Recommendations</header>
-            <p>Paragraph 1</p>
-            <ol>
-                <!-- req 7 -->
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-            <p>Paragraph 2</p>            
-        </section>
+      <!-- req 8 -->
+      <nav id="navbar">
+        <div id="sidebar-wrapper">
+          <!-- req 9, 11 -->
+          <header>My Codes</header>
+          <!-- req 10, 12, 13 -->
+          <ul id="nav-links">
+            <li>
+              <a class="nav-link" href="#WebDev_HTML_CSS">WebDev HTML CSS</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#JavaScript_Projects"
+                >JavaScript Projects</a
+              >
+            </li>
+            <a class="nav-link" href="#Python_Projects">Python Projects</a>
+            <a class="nav-link" href="#C/C++_Projects">C/C++ Projects</a>
+            <a class="nav-link" href="#MySQL_Projects">MySQL Projects</a>
+            <a class="nav-link" href="#Technical_Recommendations"
+              >Technical Recommendations</a
+            >
+          </ul>
+        </div>
+      </nav>
+
+      <!-- req 2, 4 -->
+      <section class="main-section" id="WebDev_HTML_CSS">
+        <!-- req 3 -->
+        <header>WebDev HTML CSS</header>
+        <!-- req 5 -->
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <!-- req 6 -->
+        <code></code>
+        <code></code>
+        <p>Paragraph 3</p>
+      </section>
+      <section class="main-section" id="JavaScript_Projects">
+        <header>JavaScript Projects</header>
+        <p>Paragraph 1</p>
+        <code></code>
+        <p>Paragraph 2</p>
+      </section>
+      <section class="main-section" id="Python_Projects">
+        <header>Python Projects</header>
+        <p>Paragraph 1</p>
+        <code></code>
+        <p>Paragraph 2</p>
+        <code></code>
+        <p>Paragraph 3</p>
+      </section>
+      <section class="main-section" id="C/C++_Projects">
+        <header>C/C++ Projects</header>
+        <p>Paragraph 1</p>
+        <code></code>
+        <p>Paragraph 2</p>
+      </section>
+      <section class="main-section" id="MySQL_Projects">
+        <header>MySQL Projects</header>
+        <p>Paragraph 1</p>
+        <code></code>
+        <p>Paragraph 2</p>
+      </section>
+      <section class="main-section" id="Technical_Recommendations">
+        <header>Technical Recommendations</header>
+        <p>Paragraph 1</p>
+        <ol>
+          <!-- req 7 -->
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+        <p>Paragraph 2</p>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>

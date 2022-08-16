@@ -1,5 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fluid Type Scale */
+  font-size: 18px;
+  --step--small: clamp(0.78rem, calc(0.66rem + 0.6vw), 1.2rem);
+  --step--subp: clamp(0.94rem, calc(0.78rem + 0.8vw), 1.5rem);
+  --step-h6: clamp(1.13rem, calc(0.91rem + 1.07vw), 1.88rem);
+  --step-h5: clamp(1.35rem, calc(1.07rem + 1.42vw), 2.34rem);
+  --step-h4: clamp(1.62rem, calc(1.25rem + 1.87vw), 2.93rem);
+  --step-h3: clamp(1.94rem, calc(1.45rem + 2.45vw), 3.66rem);
+  --step-h2: clamp(2.33rem, calc(1.69rem + 3.21vw), 4.58rem);
+  --step-h1: clamp(2.8rem, calc(1.96rem + 4.18vw), 5.72rem);
+
+  /* Fluid Spacing */
+  --space-3xs: clamp(0.31rem, calc(0.26rem + 0.27vw), 0.5rem);
+  --space-2xs: clamp(0.56rem, calc(0.46rem + 0.54vw), 0.94rem);
+  --space-xs: clamp(0.88rem, calc(0.71rem + 0.8vw), 1.44rem);
+  --space-s: clamp(1.13rem, calc(0.91rem + 1.07vw), 1.88rem);
+  --space-m: clamp(1.69rem, calc(1.37rem + 1.61vw), 2.81rem);
+  --space-l: clamp(2.25rem, calc(1.82rem + 2.14vw), 3.75rem);
+  --space-xl: clamp(3.38rem, calc(2.73rem + 3.21vw), 5.63rem);
+  --space-2xl: clamp(4.5rem, calc(3.64rem + 4.29vw), 7.5rem);
+  --space-3xl: clamp(6.75rem, calc(5.46rem + 6.43vw), 11.25rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.13rem + 0.89vw), 0.94rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.31rem + 1.25vw), 1.44rem);
+  --space-xs-s: clamp(0.88rem, calc(0.59rem + 1.43vw), 1.88rem);
+  --space-s-m: clamp(1.13rem, calc(0.64rem + 2.41vw), 2.81rem);
+  --space-m-l: clamp(1.69rem, calc(1.1rem + 2.95vw), 3.75rem);
+  --space-l-xl: clamp(2.25rem, calc(1.29rem + 4.82vw), 5.63rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.2rem + 5.89vw), 7.5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(2.57rem + 9.64vw), 11.25rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.13rem, calc(0.38rem + 3.75vw), 3.75rem);
+
+  /* Website Colors */
+  --hue: 174;
+  --sat: 100%;
+
+  --accent-dark: var(--hue) var(--sat) 26%;
+  --accent-light: var(--hue) var(--sat) 38%;
+  --bg: var(--hue) var(--sat) 91%;
+  --text: var(--hue) var(--sat) 5%;
+
+  /* 
+  hsla(174, 97%, 26%, 1)
+  hsla(165, 90%, 38%, 1)
+  hsla(115, 56%, 71%, 1)
+  hsla(38, 100%, 85%, 1)
+   */
+}
+
+body {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  background-color: hsl(var(--bg));
+  color: hsl(var(--text));
+}
+
+#top-bar {
+  display: flex;
+  max-width: 100%;
+  padding: var(--space-s) var(--space-s);
+  background-color: hsl(var(--accent-light));
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu-pop {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu-button {
+  width: var(--step-h6);
+  height: var(--step-h6);
+}
+
+#logo-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: var(--space-2xs);
+}
+
+#logo-laptop {
+  /* font-size: var(--step--subp); */
+  width: var(--step-h5);
+  height: var(--step-h5);
+}
+
+#logo-name {
+  /* height: max-content; */
+  display: flex;
+  align-items: center;
+  font-size: var(--step--subp);
+}
+
+#main-doc {
+  display: grid;
+  margin: var(--space-2xs) 0;
+  height: 100vh;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: auto;
+}
+
+#navbar {
+  grid-area: 1/1/-1/2;
+  background-color: hsl(var(--accent-light));
+  width: max-content;
+}
+
+#sidebar-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#sidebar-wrapper header {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 650px) {
-    .main-section {
-        display: flex;
-    }
+  .main-section {
+    display: flex;
+  }
 }
