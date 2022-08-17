@@ -11,7 +11,7 @@
 
 :root {
   /* Fluid Type Scale */
-  font-size: 18px;
+  font-size: 20px;
   --step--3xs: clamp(0.45rem, calc(0.41rem + 0.23vw), 0.61rem);
   --step--2xs: clamp(0.54rem, calc(0.48rem + 0.32vw), 0.77rem);
   --step--xs: clamp(0.65rem, calc(0.56rem + 0.44vw), 0.96rem);
@@ -23,6 +23,9 @@
   --step-h3: clamp(1.94rem, calc(1.45rem + 2.45vw), 3.66rem);
   --step-h2: clamp(2.33rem, calc(1.69rem + 3.21vw), 4.58rem);
   --step-h1: clamp(2.8rem, calc(1.96rem + 4.18vw), 5.72rem);
+
+  /* Hover Fluid Type Scale */
+  --step-small-hover: clamp(0.85rem, calc(0.68rem + 0.6vw), 1.4rem);
 
   /* Fluid Spacing */
   --space-3xs: clamp(0.31rem, calc(0.26rem + 0.27vw), 0.5rem);
@@ -161,10 +164,15 @@ body {
   font-size: var(--step--small);
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
 }
+
+/* ! Size of box changes when hovered */
 
 .nav-link:hover {
   color: hsl(var(--bg));
+  font-size: var(--step-small-hover);
+  font-weight: 600;
 }
 
 /* Section Content */
