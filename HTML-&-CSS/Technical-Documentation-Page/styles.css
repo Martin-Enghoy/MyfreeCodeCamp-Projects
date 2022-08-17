@@ -167,6 +167,16 @@ body {
   color: hsl(var(--bg));
 }
 
+/* Section Content */
+#main-content {
+  display: block;
+  grid-area: 1/5/-1/10;
+}
+
+#main-content section {
+  margin-bottom: var(--space-l);
+}
+
 @media (max-width: 650px) {
   .main-section {
     display: block;
