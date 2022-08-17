@@ -60,6 +60,7 @@
   --bg: var(--hue) var(--sat) 91%;
   --text: var(--hue) var(--sat) 5%;
 
+  scroll-behavior: smooth;
   /* 
   hsla(174, 97%, 26%, 1)
   hsla(165, 90%, 38%, 1)
@@ -189,15 +190,31 @@ body {
 /* Section Content */
 #main-content {
   display: block;
-  grid-area: 1/5/-1/10;
+  margin: var(--space-m) 0;
+  grid-area: 1/5/-1/13;
+  /* border: 1px solid red; */
 }
 
 #main-content section {
   margin-bottom: var(--space-l);
 }
 
+.main-section header {
+  font-size: var(--step-h3);
+}
+
 @media (max-width: 650px) {
   .main-section {
     display: block;
   }
+}
+
+/* Footer Content */
+
+#footer {
+  display: grid;
+  grid-area: -1/1/-1/-1;
+  background-color: hsl(var(--accent-dark));
+  /* height: var(--space-l); */
+  height: clamp(10rem);
 }
