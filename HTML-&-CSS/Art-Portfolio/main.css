@@ -5,10 +5,68 @@
     }
 } */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 0;
+}
+
+:root {
+  /* Font Size */
+  font-size: 18px;
+  --step--2xs: clamp(0.45rem, calc(0.41rem + 0.23vw), 0.61rem);
+  --step--xs: clamp(0.54rem, calc(0.48rem + 0.32vw), 0.77rem);
+  --step--small: clamp(0.65rem, calc(0.56rem + 0.44vw), 0.96rem);
+  --step--subp: clamp(0.78rem, calc(0.66rem + 0.6vw), 1.2rem);
+  --step--p: clamp(0.94rem, calc(0.78rem + 0.8vw), 1.5rem);
+  --step-h6: clamp(1.13rem, calc(0.91rem + 1.07vw), 1.88rem);
+  --step-h5: clamp(1.35rem, calc(1.07rem + 1.42vw), 2.34rem);
+  --step-h4: clamp(1.62rem, calc(1.25rem + 1.87vw), 2.93rem);
+  --step-h3: clamp(1.94rem, calc(1.45rem + 2.45vw), 3.66rem);
+  --step-h2: clamp(2.33rem, calc(1.69rem + 3.21vw), 4.58rem);
+  --step-h1: clamp(2.8rem, calc(1.96rem + 4.18vw), 5.72rem);
+
+  /* Fluid Spacing */
+  --space-3xs: clamp(0.31rem, calc(0.26rem + 0.27vw), 0.5rem);
+  --space-2xs: clamp(0.56rem, calc(0.46rem + 0.54vw), 0.94rem);
+  --space-xs: clamp(0.88rem, calc(0.71rem + 0.8vw), 1.44rem);
+  --space-s: clamp(1.13rem, calc(0.91rem + 1.07vw), 1.88rem);
+  --space-m: clamp(1.69rem, calc(1.37rem + 1.61vw), 2.81rem);
+  --space-l: clamp(2.25rem, calc(1.82rem + 2.14vw), 3.75rem);
+  --space-xl: clamp(3.38rem, calc(2.73rem + 3.21vw), 5.63rem);
+  --space-2xl: clamp(4.5rem, calc(3.64rem + 4.29vw), 7.5rem);
+  --space-3xl: clamp(6.75rem, calc(5.46rem + 6.43vw), 11.25rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.13rem + 0.89vw), 0.94rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.31rem + 1.25vw), 1.44rem);
+  --space-xs-s: clamp(0.88rem, calc(0.59rem + 1.43vw), 1.88rem);
+  --space-s-m: clamp(1.13rem, calc(0.64rem + 2.41vw), 2.81rem);
+  --space-m-l: clamp(1.69rem, calc(1.1rem + 2.95vw), 3.75rem);
+  --space-l-xl: clamp(2.25rem, calc(1.29rem + 4.82vw), 5.63rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.2rem + 5.89vw), 7.5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(2.57rem + 9.64vw), 11.25rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.13rem, calc(0.38rem + 3.75vw), 3.75rem);
+
+  /* Website Colors */
+  --text: hsla(31, 62%, 99%, 1);
+  --bg: hsla(31, 62%, 80%, 1);
+  --accent-light: hsla(26, 53%, 62%, 1);
+  --accent-dark: hsla(24, 50%, 53%, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: hsla(31, 62%, 3%);
+    --bg: hsla(31, 62%, 40%, 1);
+    --accent-light: hsla(24, 50%, 53%, 1);
+    --accent-dark: hsla(26, 53%, 62%, 1);
+  }
 }
 
 html {
@@ -26,9 +84,16 @@ body {
   /* background-color: gray; */
   /* background-image: url("assets/bg.jpg"); */
   /* background: url("assets/white-wall.jpg") repeat; */
-  background: repeating-linear-gradient(135deg, #ebccab, #d2996c, #c37c4d);
+  /* background: repeating-linear-gradient(135deg, #ebccab, #d2996c, #c37c4d); */
+  background-color: #ebccab;
+
   /* filter: blur(100px);
     -webkit-filter: blur(100px); */
+  /* 
+    hsla(31, 62%, 80%, 1)
+    hsla(26, 53%, 62%, 1)
+    hsla(24, 50%, 53%, 1)
+   */
   backdrop-filter: blur(3px);
   background-position: center;
   background-repeat: repeat;

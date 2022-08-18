@@ -15,7 +15,7 @@
   border-radius: 50%;
   font-size: 2em;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--text);
   background-color: #8e4b32;
   text-decoration: none;
   text-align: center;
@@ -56,26 +56,27 @@
 
 #navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
   width: 100vw;
   height: 125px;
   background-color: #8e4b32;
-  padding: 0 10vw;
+  padding: 0 var(--space-xl);
   /* background-color: #B66B3E; */
   /* opacity: 70%; */
 }
 
 #webfolio-logo {
   text-decoration: none;
-  color: #fff;
+  color: var(--text);
   font-weight: 800;
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: var(--step-h4);
   /* border: 1px solid red; */
 }
 
-#links-wrapper {
+/* #links-wrapper {
   display: flex;
   width: 60vw;
   justify-content: flex-start;
@@ -83,14 +84,46 @@
   gap: 40px;
   flex-wrap: wrap;
   align-content: center;
-  /* border: 1px solid red; */
+} */
+
+#links-wrapper {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  height: 30vh;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  background-color: var(--accent-light);
+  /* z-index: -1; */
+}
+
+.nav-link-wrapper {
+  list-style: none;
+  border-bottom: 2px solid var(--text);
 }
 
 .nav-link {
   text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+  color: var(--text);
+  /* font-size: 20px; */
+  font-size: var(--step-h6);
   font-weight: 400;
+  padding: 0 2.5em;
+  box-sizing: border-box;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+}
+
+#nav-menu-button {
+  flex-wrap: wrap;
+  background: transparent;
+  line-height: 40px;
+  margin: auto 0;
+  color: var(--text);
 }
 
 /* #recent {
@@ -150,11 +183,11 @@
   display: flex;
   margin: 0;
   justify-content: center; /* Horizontal Align */
-  align-items: flex-start; /* Vertical Align */
+  align-items: center; /* Vertical Align */
   /* border: 1px solid red; */
   font-size: 45px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text);
 }
 
 .middle-content {

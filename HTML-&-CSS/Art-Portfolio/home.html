@@ -22,25 +22,56 @@
   </head>
 
   <body>
-    <nav id="navbar">
-      <a href="#" id="webfolio-logo">TangingArt</a>
-      <div id="links-wrapper">
+    <ul id="links-wrapper">
+      <li class="nav-link-wrapper">
         <a href="#Recent" class="nav-link bold" id="recent"
           ><i class="fa-solid fa-fire"></i> Recent</a
         >
+      </li>
+      <li class="nav-link-wrapper">
         <a href="#3D" class="nav-link"
           ><i class="fa-solid fa-cube"></i> 3D Works</a
         >
+      </li>
+      <li class="nav-link-wrapper">
         <a href="#2D" class="nav-link"
           ><i class="fa-solid fa-dog"></i> 2D Works</a
         >
+      </li>
+      <li class="nav-link-wrapper">
         <a href="#Commissions" class="nav-link"
           ><i class="fa-solid fa-face-laugh-beam"></i> Commissions</a
         >
-      </div>
+      </li>
+    </ul>
+
+    <nav id="navbar">
+      <a href="#" id="webfolio-logo">TangingArt</a>
+      <!-- Nav Menu Button -->
+      <svg
+        id="nav-menu-button"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+          fill="currentColor"
+        />
+        <path
+          d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+          fill="currentColor"
+        />
+        <path
+          d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+          fill="currentColor"
+        />
+      </svg>
     </nav>
     <main id="main-content">
-      <section id="Recent">
+      <section class="content" id="Recent">
         <div class="content-wrapper">
           <div class="left-box">
             <div class="left-content"></div>
@@ -60,7 +91,7 @@
       <section id="top-button-section">
         <a id="top-button" href="#"><i class="fa-solid fa-arrow-up"></i></a>
       </section>
-      <section id="3D">
+      <section class="content" id="3D">
         <div class="content-wrapper">
           <div class="left-box">
             <div class="left-content"></div>
@@ -77,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section id="2D">
+      <section class="content" id="2D">
         <div class="content-wrapper">
           <div class="left-box">
             <div class="left-content"></div>
@@ -94,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section id="Commissions">
+      <section class="content" id="Commissions">
         <div class="content-wrapper">
           <div class="left-box">
             <div class="left-content"></div>
